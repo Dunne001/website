@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- <h1 id="hd1"></h1>
@@ -14,11 +15,15 @@
     <button id="submit">Submit</button>
     <h2 id="myH2">Enter the radius of the circle</h2>
   -->
-    <h1 id="myH1">Enter the radius</h1>
-    <label for="radius">Radius</label>
-    <input type="text" id="myInput"><br>
-    <button type="submit" id="submit">Submit</button><br>
-    <h2 id="myH2"></h2>
+    <main>
+      <section id="section1" class=" p-4 sm:p-6 lg:p-8 box-border size-64 mx-auto mt-8 border-2 border-sky-700 p-4">
+       <h1 id="myH1" class="text-blue-500">Give me the radius, I will do the circumference</h1>
+       <label for="radius">Radius:</label>
+       <input type="text" id="myInput" class="mb-2 border-2 border-indigo-500  rounded-md"><br>
+       <button type="submit" id="submit" class="bg-sky-500 hover:bg-sky-800 rounded-md">Calculate</button><br>
+       <h2 id="myH2"></h2>
+    </section>
+    </main>
 
     <script src="index.js"></script>
   </body>
